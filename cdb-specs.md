@@ -72,12 +72,17 @@ Emmanuel lo pide al terminar la jornada. Pasos, en orden:
 5. Actualizar el Google Doc con el texto actual del guion (ver sección 8).
 6. Confirmar en el chat: commit subido, y si el Google Doc quedó actualizado o no.
 
-## 8. Google Doc — estado y límites
+## 8. Google Doc — cómo se sincroniza y límites
 
-- **Estado al 2026-11-11: pendiente.** Falta conectar el conector de Google Docs en Claude. Hasta entonces el Google Doc no se actualiza.
-- **No existe espejo en tiempo real** entre el artefacto y Google Docs. Lo que sí se puede: Claude copia el texto al Google Doc cada vez que trabaja (al cerrar una tanda y en cada "subí los cambios a github").
-- La sincronización va en un solo sentido: artefacto → Google Doc. Si Emmanuel edita el Google Doc directamente, tiene que avisar antes de la próxima sincronización, porque Claude lo sobrescribiría.
+- **Estado al 2026-11-11: conectado.** El conector de Google Docs está activo y el doc tiene el guion completo hasta la tanda 8 (título como Encabezado 1, `CAPÍTULO 2` y el marcador de tanda en negrita, cortes de escena como `* * *` centrado).
+- **No existe espejo en tiempo real** entre el artefacto y Google Docs. Claude copia el texto al Google Doc cuando trabaja: al cerrar cada tanda y en cada "subí los cambios a github".
+- **Cómo sincronizar una tanda nueva:** agregar al final del Google Doc solo los párrafos nuevos (marcador en negrita + texto), sin tocar lo anterior. No borrar y reescribir el doc entero.
+- **Cómo sincronizar una edición de texto existente:** cambiar en el Google Doc solo las palabras que cambiaron en el artefacto.
+- **Verificación obligatoria:** después de escribir, leer el Google Doc y comparar el largo de cada párrafo contra `cdb-guion-extendido.md`. Si algo no coincide, corregir antes de dar por terminado.
+- La sincronización va en un solo sentido: artefacto → Google Doc. Si Emmanuel edita el Google Doc directamente, tiene que avisar antes de la próxima sincronización.
 - Cuando Emmanuel pase a refinar el texto en Google Docs, hay que cortar esta sincronización y actualizar estos specs.
+- **Scenes en Google Docs:** todavía no hay pestaña. Crearla (pestaña "Scenes") cuando se agregue la primera frase.
+- Si el conector de Google Docs no está disponible en el chat, avisar a Emmanuel y seguir con el resto; no reemplazarlo por otro archivo.
 
 ## 9. Reglas generales
 
