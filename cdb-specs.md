@@ -39,7 +39,7 @@ Los tres archivos van en la carpeta local y en GitHub. En el artefacto, las esce
 
 Emmanuel pasa imágenes de páginas manuscritas. Para cada tanda:
 
-1. Transcribir el texto **tal cual está escrito**. No corregir estilo, no reescribir, no completar frases cortadas, no "mejorar".
+1. Transcribir el texto fiel al manuscrito, **corrigiendo siempre ortografía, acentos, signos de apertura (¿ ¡) y errores evidentes de tipeo o escritura** a criterio de Claude. No cambiar palabras, estilo ni giros de Ariana (voseo, palabras inventadas, nombres propios); no reescribir, no completar frases cortadas, no "mejorar".
 2. Palabra dudosa o ilegible: escribir la mejor lectura seguida de `[?]`. No inventar.
 3. Agregar el texto **al final** del artefacto, precedido por un párrafo marcador en negrita:
    `>>> NUEVO (tanda N) — sigue desde «…últimas palabras de la tanda anterior» >>>`
@@ -49,7 +49,7 @@ Emmanuel pasa imágenes de páginas manuscritas. Para cada tanda:
 
 Convenciones ya presentes en el texto: título `# Ariana`, capítulos como párrafo en negrita (`**CAPÍTULO 2**`), cortes de escena con línea horizontal (`---`).
 
-**A confirmar con Emmanuel** (no estaba documentado al crear este archivo): si la ortografía y los acentos se corrigen al transcribir o se dejan como en el manuscrito. Hasta que lo confirme, dejar como en el manuscrito.
+Regla de ortografía confirmada por Emmanuel el 2026-11-11. Vale para texto transcripto de imágenes y para texto dictado o tipeado por él. El texto anterior a esa fecha no se corrige retroactivamente salvo que lo pida.
 
 ## 6. "Agregá esto a scenes"
 
@@ -95,3 +95,4 @@ Emmanuel lo pide al terminar la jornada. Pasos, en orden:
 | Tanda | Fecha | Hasta dónde llega |
 | --- | --- | --- |
 | 1–8 | antes del 2026-11-11 | «…si este lector no me sabe descubrir algo nuevo, no lo pienso seguir usando.» |
+| 9 | 2026-11-11 | «—Porque me encanta el café.» (7 páginas: la presión, la cafetera y el aparato del Abo) |
