@@ -39,17 +39,17 @@ Los tres archivos van en la carpeta local y en GitHub. En el artefacto, las esce
 
 Emmanuel pasa imágenes de páginas manuscritas. Para cada tanda:
 
-1. Transcribir el texto fiel al manuscrito, **corrigiendo siempre ortografía, acentos, signos de apertura (¿ ¡) y errores evidentes de tipeo o escritura** a criterio de Claude. No cambiar palabras, estilo ni giros de Ariana (voseo, palabras inventadas, nombres propios); no reescribir, no completar frases cortadas, no "mejorar".
-2. Palabra dudosa o ilegible: escribir la mejor lectura seguida de `[?]`. No inventar.
+1. Transcribir el texto fiel al manuscrito. **No detenerse en temas de ortografía:** corregir al pasar lo evidente (acentos, signos de apertura, errores claros), sin consultar a Emmanuel ni listar las correcciones. No cambiar palabras, estilo ni giros de Ariana (voseo, palabras inventadas, nombres propios); no reescribir, no completar frases cortadas, no "mejorar".
+2. Lo que no se entiende o es ilegible: dejar `[...]` en ese lugar y seguir. No adivinar ni frenar la transcripción. Emmanuel revisa después el texto contra las imágenes y lo corrige él en el artefacto. (Las marcas `[?]` de tandas anteriores a esta regla quedan como están.)
 3. Agregar el texto **al final** del artefacto, precedido por un párrafo marcador en negrita:
    `>>> NUEVO (tanda N) — sigue desde «…últimas palabras de la tanda anterior» >>>`
 4. No modificar texto ya existente salvo que Emmanuel lo pida de forma explícita.
 5. Después de agregar al artefacto, actualizar `cdb-guion-extendido.md` en la carpeta local **exportando el artefacto a Markdown** (nunca retipeando el texto a mano).
-6. Avisar en el chat qué palabras quedaron con `[?]`.
+6. Al terminar, decir en el chat solo cuántos `[...]` quedaron, sin detallar correcciones de ortografía.
 
 Convenciones ya presentes en el texto: título `# Ariana`, capítulos como párrafo en negrita (`**CAPÍTULO 2**`), cortes de escena con línea horizontal (`---`).
 
-Regla de ortografía confirmada por Emmanuel el 2026-11-11. Vale para texto transcripto de imágenes y para texto dictado o tipeado por él. El texto anterior a esa fecha no se corrige retroactivamente salvo que lo pida.
+Reglas de ortografía y de `[...]` dadas por Emmanuel el 2026-11-11. Valen para texto transcripto de imágenes y para texto dictado o tipeado por él. El texto anterior no se corrige retroactivamente salvo que lo pida.
 
 ## 6. "Agregá esto a scenes"
 
@@ -63,6 +63,7 @@ Cuando Emmanuel dice *agregá "[FRASE]" a scenes*:
 
 Emmanuel lo pide al terminar la jornada. Pasos, en orden:
 
+1. Leer el Google Doc y traer al artefacto cualquier ajuste que Emmanuel haya hecho ahí (ver sección 8).
 1. Exportar el artefacto a Markdown y actualizar `cdb-guion-extendido.md` en la carpeta local.
 2. Verificar que `cdb-scenes.md` y `cdb-specs.md` locales estén al día.
 3. Copiar los tres archivos al repo y hacer commit en `main` con la fecha de la versión en el mensaje:
@@ -79,7 +80,13 @@ Emmanuel lo pide al terminar la jornada. Pasos, en orden:
 - **Cómo sincronizar una tanda nueva:** agregar al final del Google Doc solo los párrafos nuevos (marcador en negrita + texto), sin tocar lo anterior. No borrar y reescribir el doc entero.
 - **Cómo sincronizar una edición de texto existente:** cambiar en el Google Doc solo las palabras que cambiaron en el artefacto.
 - **Verificación obligatoria:** después de escribir, leer el Google Doc y comparar el largo de cada párrafo contra `cdb-guion-extendido.md`. Si algo no coincide, corregir antes de dar por terminado.
-- La sincronización va en un solo sentido: artefacto → Google Doc. Si Emmanuel edita el Google Doc directamente, tiene que avisar antes de la próxima sincronización.
+- **Ediciones de Emmanuel en el Google Doc:** Emmanuel puede editar el Google Doc a mano. Antes de cada sincronización y antes de cada subida a GitHub, leer el Google Doc y compararlo con el artefacto. Si hay diferencias que vienen de él:
+    1. No pisarlas nunca en el Google Doc.
+    2. Llevar cada ajuste al artefacto de Claude (cambiando solo las palabras que cambiaron).
+    3. Actualizar `cdb-guion-extendido.md` exportando el artefacto.
+    4. Recién entonces subir la nueva versión a GitHub.
+    5. Avisar en el chat qué ajustes se trajeron del Google Doc.
+- Si el mismo pasaje cambió en el Google Doc y en el artefacto de forma distinta, no elegir: preguntarle a Emmanuel cuál vale.
 - Cuando Emmanuel pase a refinar el texto en Google Docs, hay que cortar esta sincronización y actualizar estos specs.
 - **Scenes en Google Docs:** todavía no hay pestaña. Crearla (pestaña "Scenes") cuando se agregue la primera frase.
 - Si el conector de Google Docs no está disponible en el chat, avisar a Emmanuel y seguir con el resto; no reemplazarlo por otro archivo.
@@ -96,3 +103,4 @@ Emmanuel lo pide al terminar la jornada. Pasos, en orden:
 | --- | --- | --- |
 | 1–8 | antes del 2026-11-11 | «…si este lector no me sabe descubrir algo nuevo, no lo pienso seguir usando.» |
 | 9 | 2026-11-11 | «—Porque me encanta el café.» (7 páginas: la presión, la cafetera y el aparato del Abo) |
+| 10 | 2026-11-11 | «Se volvió ella misma su propio conejillo de indias.» (12 páginas: la flor de pinches, Cualajum, y pasaje en tercera persona sobre la app, la charla TED y el lector cuántico). La página inicial (pregunta sobre las manchas + Cualajum) se agregó después. |
